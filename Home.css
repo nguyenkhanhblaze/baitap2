@@ -1,0 +1,59 @@
+.home-content {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.home-content li:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.solid-logo {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    margin: 50px 0px 0px 20px;
+    -webkit-animation:spin 12s linear infinite;
+    -moz-animation:spin 12s linear infinite;
+    animation:spin 12s linear infinite;
+}
+
+.loading-codesandbox {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.loading-codesandbox:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #242424;
+    border-color: #242424 transparent #242424 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes loading-codesandbox {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card-content-basics {
+    height: 77vh;
+    background-color: #242424;
+    padding-left: 0px;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+    overflow: scroll;
+}
+
+.text-focus {
+    color: #e17f7d;
+}
